@@ -9,7 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var i=0
 
+    @IBAction func tap(_ sender: UITapGestureRecognizer) {
+        i += 1
+        print("this is a tap number=\(i)")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
